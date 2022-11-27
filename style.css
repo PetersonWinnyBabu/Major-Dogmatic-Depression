@@ -1,13 +1,3 @@
-footer {
-    text-align:center;
-    position: fixed;
-    bottom: 2px;
-    right:0vw;
-    padding: 2px;
-    background-color:rgb(35, 0, 31);
-    color:white;
-    margin-top: auto;
-  }
 
 *, *::before, *::after {
 
@@ -29,6 +19,17 @@ body {
     width:100vw;
     height:100vh;
 }
+footer {
+    text-align:center;
+    position: fixed;
+    bottom: 2px;
+    right:0vw;
+    padding: 2px;
+    background-color: rgb(131 0 116);
+    color:white;
+    margin-top: auto;
+  }
+
 .title{
     padding:0px;
     margin:0px;
@@ -41,8 +42,9 @@ body {
     max-height: 80%;
     border-radius: 20px;
     background-image:url('./Retro.gif');
-    background-position-x:2px;
-    background-position-y: -120px;
+    background-position: flex;
+    background-position-x: 0px;
+    background-position-y: -110px;
     background-repeat: no-repeat;
     background-size:cover;
     box-shadow:0 0 30px 5px;
@@ -78,12 +80,14 @@ body {
     background-size: cover;
     border: 1px solid hsl(160, 94%, 14%);
     padding: 5px 10px;
-    color: rgb(248, 248, 248);
+    color: rgb(255, 255, 255);
     outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px;
+    color:black;
 }
 
-
-
 .btn:hover {
-    border-color: black;
+    border-color: rgb(255, 255, 255);
 }
