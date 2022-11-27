@@ -37,7 +37,7 @@ body {
     background-size: cover;
     padding: 2px;
     border-radius: 5px;
-    box-shadow: 0 0 20px 0px;
+    box-shadow: 0 0 20px 5px;
 }
 
 .btn-grid {
