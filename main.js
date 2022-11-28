@@ -65,6 +65,7 @@ const textNodes = [
 
           //setState: { sleep: true },
           nextText: openPopup,
+          nextText:2
 
         },
         {
