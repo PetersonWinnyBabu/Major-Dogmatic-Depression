@@ -1,6 +1,13 @@
-
+footer {
+    text-align:center;
+    position: fixed;
+    bottom: 2px;
+    right:0vw;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-top: auto;
+  }
 *, *::before, *::after {
-
     box-sizing: boder-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -19,16 +26,54 @@ body {
     width:100vw;
     height:100vh;
 }
-footer {
-    text-align:center;
-    position: fixed;
-    bottom: 2px;
-    right:0vw;
-    padding: 2px;
-    background-color: rgb(131 0 116);
-    color:white;
-    margin-top: auto;
-  }
+.popup {
+    width: 800px;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50% ) scale(0);
+    text-align: center;
+    padding:0 30px 30px;
+    color:rgb(255, 255, 255);
+    font-size: large;
+    visibility: hidden;
+    transition: transform 0.5s,top 0.5s;
+}
+.open-popup {
+    visibility: visible;
+    top:50%;
+    transform:translate(-50%,-50% ) scale(1) ;
+
+
+}
+.popup img {
+    width: 560px;
+    height: 460px;
+    margin-top: -120px;
+    border-radius: 25%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+}
+.popup h2 { 
+    font-size:38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+}
+.popup button {
+    width: 50%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #00ac9e;
+    color: rgb(0, 0, 0);
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
 
 .title{
     padding:0px;
@@ -59,7 +104,6 @@ footer {
     background-image:url('./istockphoto-1072976146-612x612.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    position:relative;
     top: 26vh;
     left: 0vw;
     padding: 2px;

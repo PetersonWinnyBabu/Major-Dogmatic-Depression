@@ -8,27 +8,31 @@
     <script defer src="main.js"></script>
     <title>Dogmatic Depression</title>
 </head>
+
 <body>
     <div class="title"></div>
     <div class ="background-image"></div>
-   
-    
         <div class="container">
         <div id="text">Text</div>
-        <div id="option-buttons" class="btn-grid">
+        <div id="option-buttons" class="btn-grid" onclick="openPopup()">
             <button class="btn">Option 1</button>
             <button class="btn">Option 2</button>
             <button class="btn">Option 3</button>
             <button class="btn">Option 4</button>
+
             </div>
         </div>
     </div>
+  <div class="popup" id="popup">
+        <img src="wakeup.gif">
+        <p>CLICK NEXT</p>
+        <button type="button"onclick="closePopup()">NEXT</button>
+    
+  </div>    
 
 <footer>
-
     <a href="resources.html">Mental Health Resources</a>
 </footer>
-
 
 </body>
 </html>

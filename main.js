@@ -2,10 +2,11 @@ const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
 
 let state = {}
-
 function startGame(){
 state = {}
 showTextNode(1)
+
+let popup = document.getElementById("popup");
 
 }
 
@@ -44,16 +45,27 @@ function selectOption(option) {
     state = Object.assign(state, option.setState)
     showTextNode(nextTextNodeId)
   }
+  
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+
+function closePopup(){
+  popup.classList.remove("open-popup");
+}
 
 const textNodes = [
     {
       id: 1,
+
       text: 'You hear your alarm going off, you overslept! It is 30 mins to your first Lecture.',
       options: [
         {
-          text: 'Wake Up!',
+          text: 'Wake Up!' ,
+
           //setState: { sleep: true },
-          nextText: 2
+          nextText: openPopup,
+
         },
         {
           text: 'Hit Snooze',
@@ -143,10 +155,13 @@ const textNodes = [
           ]
       },
 
+      {
+        id: 7,
+
+      }
+
       
 
 ]
-
-
 
 startGame()
