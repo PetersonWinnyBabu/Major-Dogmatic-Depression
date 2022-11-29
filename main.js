@@ -7,6 +7,7 @@ state = {}
 showTextNode(1)
 
 let popup = document.getElementById("popup");
+let popup1= document.getElementById("popup1");
 
 }
 
@@ -52,19 +53,25 @@ function openPopup(){
 
 function closePopup(){
   popup.classList.remove("open-popup");
+
 }
+function openPopup1(){
+  popup1.classList.add("open-popup1");
+}
+
+function closePopup1(){
+  popup1.classList.remove("open-popup1");
+}
+
 
 const textNodes = [
     {
       id: 1,
-
       text: 'You hear your alarm going off, you overslept! It is 30 mins to your first Lecture.',
       options: [
         {
           text: 'Wake Up!' ,
-
           //setState: { sleep: true },
-          nextText: openPopup,
           nextText:2
 
         },
@@ -158,6 +165,16 @@ const textNodes = [
 
       {
         id: 7,
+        text: 'GAME OVER',
+        options: [
+            {
+                text: 'START AGAIN',
+                nextText: -1
+            },
+           
+           
+          ]
+      
 
       }
 
