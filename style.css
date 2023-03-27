@@ -123,23 +123,21 @@ body {
     box-shadow:0 2px 5px rgba(0,0,0,0.2);
 }
 
-
-
 .title{
     padding:0px;
     margin:0px;
     display: flex;
     position:fixed;
     top: 15px;
-    width: 430px;
-    height: 200px;
+    width: 600px;
+    height: 110px;
     max-width: 80%;
     max-height: 80%;
     border-radius: 20px;
-    background-image:url('./DOGMAtic.png');
+    background-image: url('/webtwxt.png') ;
     background-position: flex;
     background-position-x: 0px;
-    background-position-y: -110px;
+    background-position-y: -10px;
     background-repeat: no-repeat;
     background-size:cover;
     box-shadow:0 0 30px 5px;
